@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
         <title>First Project</title>
         <link rel="stylesheet" href="styles.css">
         <!-- For google's epilogue font -->
@@ -8,40 +10,57 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     </head>
+
     <body>
-        <div id="nav">
-            <h1 id="snap">snap</h1>
+        <!-- The navigation menu -->
+        <nav class="navbar">
+            <img id="snap" src="images/logo.svg">
+            <img id="menu-btn" alt="menu-button" src="images/icon-menu.svg">
+            
+            <div class="navlinks"> 
+                <img id="icon-close" alt="icon-close" src="images/icon-close-menu.svg">    
+                <ul id="navlinks-left">
+                    <li class="dropdown">
+                        <a id="features" href="#">Features<img id="arrow" alt="arrow down icon" src="images/icon-arrow-down.svg"></a>
+                        <ul id="features-dd" class="dropdown-menu">
+                            <li><a href="#"><img alt="todo list icon" src="images/icon-todo.svg">Todo List</a></li> 
+                            <li><a href="#"><img alt="calendar icon "src="images/icon-calendar.svg">Calendar</a></li>
+                            <li><a href="#"><img alt="reminders icon" src="images/icon-reminders.svg">Reminders</a></li>
+                            <li><a href="#"><img alt="planning icon" src="images/icon-planning.svg">Planning</a></li>
+                        </ul>
+                    </li>
 
-            <div id="options-left">
-                <input id="feat" class="o-l" list="features" placeholder="Features">
-                <datalist id = "features">
-                    <option value = "Todo List">
-                    <option value = "Calendar">
-                    <option value="Reminders">
-                    <option value="Planning">
-                </datalist>
-                <input id="comp" class="o-l" list="company" placeholder="Company">
-                <datalist id = "company">
-                    <option value = "History">
-                    <option value = "Our Team">
-                    <option value="Blog">
-                </datalist>
-                <a class="o-l" href="">Careers</a>
-                <a class="o-l" href="">About</a>
-            </div>
+                    <li class="dropdown">
+                        <a id="company" href="#">Company<img id="arrow" alt="arrow down icon" src="images/icon-arrow-down.svg"></a>
+                        <ul id="company-dd" class="dropdown-menu">
+                            <li><a href="#">History</a></li>
+                            <li><a href="#">Our Team</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </li>
 
-            <div id="options-right">
-                <a href class="right">Login</a>
-                <button id="register-button" class="right">Register</button>
+                    <li class="dropdown"><a href="#">Careers</a></li>
+
+                    <li class="dropdown"><a href="#">About</a></li>
+                </ul>
+
+                <ul id="navlinks-right">
+                    <a href id="login-link">Login</a>
+                    <button id="register-button">Register</button>
+                </ul>
             </div>
-        </div>
-        <div id="content">
-            <div class="paragraph">
-                <div id="mrw">
+        </nav>  
+
+
+        <!-- The Content -->
+        <img id="hero-pic-mobile" alt="hero-pic-" src="images/image-hero-mobile.png">
+        <div class="content">
+            <div id="content-paragraph">
+                <div id="p1">
                     Make<br> 
                     remote work
                 </div>
-                <div id="nd">
+                <div id="p2">
                     Get your team in sync, No matter your location.<br>
                     Streamline processes, create team rituals, and<br>
                     watch productivity soar.
@@ -49,16 +68,17 @@
                 <div>
                     <button id="Learn-more-button">Learn more</button>
                 </div>
-                <div id="down-images">
-                    <img id="databiz" src="images/client-databiz.svg">
-                    <img id="audio-p" src="images/client-audiophile.svg">
-                    <img id="meet" src="images/client-meet.svg">
-                    <img id="maker" src="images/client-maker.svg">
+                <div id="bottom-images">
+                    <img id="databiz-image" src="images/client-databiz.svg">
+                    <img id="audiophile-image" src="images/client-audiophile.svg">
+                    <img id="meet-image" src="images/client-meet.svg">
+                    <img id="maker-image" src="images/client-maker.svg">
                 </div>
             </div>
-            <div id="img-div" >
-                <img id="pic" src="images/image-hero-desktop.png" alt="error">
+            <div id="content-image" >
+                <img id="hero-pic" src="images/image-hero-desktop.png" alt="error">
             </div>
         </div>
+        <script src="index.js"></script>
     </body>
 </html>
