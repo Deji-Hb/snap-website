@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     features.addEventListener("click", function(e) {
         e.preventDefault(); // Prevent the default link behavior
-        if (features_dd.style.display === "none" || company_dd.style.display === "") {
+        if (features_dd.style.display === "none" || features_dd.style.display === "") {
             features_dd.style.display = "block";
         } else {
             features_dd.style.display = "none";
