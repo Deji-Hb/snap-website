@@ -8,6 +8,17 @@ body {
     font-family: "Epilogue", sans-serif;
     font-weight: 500;
 }
+#header {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
 .navbar {
     font-size: 14px;
     display: flex;
@@ -71,7 +82,7 @@ a:hover {
     padding: 8px 10px;
     color: hsl(0, 0%, 41%);
 }
-#arrow {
+.arrow {
     margin-left: 7px;
 }
 #navlinks-right {
@@ -203,7 +214,7 @@ a:hover {
         margin: 0;
         padding: 0;
     }
-    #arrow {
+    .arrow {
         margin-bottom: 2px;
     }
     .dropdown:hover .dropdown-menu {

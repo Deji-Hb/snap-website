@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>First Project</title>
         <link rel="stylesheet" href="styles.css">
         <!-- For google's epilogue font -->
@@ -14,24 +14,24 @@
     <body>
         <!-- The navigation menu -->
         <nav class="navbar">
-            <img id="snap" src="images/logo.svg">
+            <img id="snap" alt="snap-logo" src="images/logo.svg">
             <img id="menu-btn" alt="menu-button" src="images/icon-menu.svg">
             
             <div class="navlinks"> 
                 <img id="icon-close" alt="icon-close" src="images/icon-close-menu.svg">    
                 <ul id="navlinks-left">
                     <li class="dropdown">
-                        <a id="features" href="#">Features<img id="arrow" alt="arrow down icon" src="images/icon-arrow-down.svg"></a>
+                        <a id="features" href="#">Features<img class="arrow" alt="arrow down icon" src="images/icon-arrow-down.svg"></a>
                         <ul id="features-dd" class="dropdown-menu">
-                            <li><a href="#"><img alt="todo list icon" src="images/icon-todo.svg">Todo List</a></li> 
-                            <li><a href="#"><img alt="calendar icon "src="images/icon-calendar.svg">Calendar</a></li>
-                            <li><a href="#"><img alt="reminders icon" src="images/icon-reminders.svg">Reminders</a></li>
-                            <li><a href="#"><img alt="planning icon" src="images/icon-planning.svg">Planning</a></li>
+                            <li><a href="#"><img alt="todo-list-icon" src="images/icon-todo.svg">Todo List</a></li> 
+                            <li><a href="#"><img alt="calendar-icon "src="images/icon-calendar.svg">Calendar</a></li>
+                            <li><a href="#"><img alt="reminders-icon" src="images/icon-reminders.svg">Reminders</a></li>
+                            <li><a href="#"><img alt="planning-icon" src="images/icon-planning.svg">Planning</a></li>
                         </ul>
                     </li>
 
                     <li class="dropdown">
-                        <a id="company" href="#">Company<img id="arrow" alt="arrow down icon" src="images/icon-arrow-down.svg"></a>
+                        <a id="company" href="#">Company<img class="arrow" alt="arrow down icon" src="images/icon-arrow-down.svg"></a>
                         <ul id="company-dd" class="dropdown-menu">
                             <li><a href="#">History</a></li>
                             <li><a href="#">Our Team</a></li>
@@ -45,40 +45,43 @@
                 </ul>
 
                 <ul id="navlinks-right">
-                    <a href id="login-link">Login</a>
-                    <button id="register-button">Register</button>
+                    <li><a href="#" id="login-link">Login</a></li>
+                    <li><button id="register-button">Register</button></li>
                 </ul>
             </div>
         </nav>  
 
 
-        <!-- The Content -->
-        <img id="hero-pic-mobile" alt="hero-pic-" src="images/image-hero-mobile.png">
-        <div class="content">
-            <div id="content-paragraph">
-                <div id="p1">
-                    Make<br> 
-                    remote work
+        <main>
+            <h1 id="header">snap website</h1>
+            <img id="hero-pic-mobile" alt="hero-pic-" src="images/image-hero-mobile.png">
+            <div class="content">
+                <div id="content-paragraph">
+                    <div id="p1">
+                        Make<br> 
+                        remote work
+                    </div>
+                    <div id="p2">
+                        Get your team in sync, No matter your location.<br>
+                        Streamline processes, create team rituals, and<br>
+                        watch productivity soar.
+                    </div>
+                    <div>
+                        <button id="Learn-more-button">Learn more</button>
+                    </div>
+                    <div id="bottom-images">
+                        <img id="databiz-image" alt="databiz-img" src="images/client-databiz.svg">
+                        <img id="audiophile-image" alt="audiophile-img" src="images/client-audiophile.svg">
+                        <img id="meet-image" alt="meet-img" src="images/client-meet.svg">
+                        <img id="maker-image" alt="maker-img" src="images/client-maker.svg">
+                    </div>
                 </div>
-                <div id="p2">
-                    Get your team in sync, No matter your location.<br>
-                    Streamline processes, create team rituals, and<br>
-                    watch productivity soar.
-                </div>
-                <div>
-                    <button id="Learn-more-button">Learn more</button>
-                </div>
-                <div id="bottom-images">
-                    <img id="databiz-image" src="images/client-databiz.svg">
-                    <img id="audiophile-image" src="images/client-audiophile.svg">
-                    <img id="meet-image" src="images/client-meet.svg">
-                    <img id="maker-image" src="images/client-maker.svg">
+                <div id="content-image" >
+                    <img id="hero-pic" src="images/image-hero-desktop.png" alt="error">
                 </div>
             </div>
-            <div id="content-image" >
-                <img id="hero-pic" src="images/image-hero-desktop.png" alt="error">
-            </div>
-        </div>
+        </main>
+        
         <script src="index.js"></script>
     </body>
 </html>
